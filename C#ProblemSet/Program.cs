@@ -44,7 +44,13 @@ Console.WriteLine("Here is the solution");
 
 
 //K most frequent
-int[] nums = { 1, 1, 1, 2, 2, 3 };
-int k = 2;
-int[] frequent = TopKFrequentSolution.TopKFrequent(nums, k);
-Console.WriteLine(string.Join(", ", frequent));
+//int[] nums = { 1, 1, 1, 2, 2, 3 };
+//int k = 2;
+//int[] frequent = TopKFrequentSolution.TopKFrequent(nums, k);
+//Console.WriteLine(string.Join(", ", frequent));
+
+//ProductOfArrayExceptSelf
+int[] nums = { 1, 2, 3, 4 };
+//int[] nums = { -1, 1, 0, -3, 3 };
+int[] product = ProductOfArrayExceptSelfSolution.ProductExceptSelf(nums);
+Console.WriteLine(string.Join(", ", product));
