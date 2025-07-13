@@ -35,9 +35,16 @@ Console.WriteLine("Here is the solution");
 //Console.WriteLine(solution[0]+" "+solution[1]);
 
 //Group Anagrams
-String[] strings = { "eat", "tea", "tan", "ate", "nat", "bat" };
-List<List<string>> result = GroupAnagramsSolution.GroupAnagrams(strings);
-for(int i = 0; i < result.Count; i++)
-{
-    Console.WriteLine(String.Join(",", result[i]));
-}
+//String[] strings = { "eat", "tea", "tan", "ate", "nat", "bat" };
+//List<List<string>> result = GroupAnagramsSolution.GroupAnagrams(strings);
+//for(int i = 0; i < result.Count; i++)
+//{
+//    Console.WriteLine(String.Join(",", result[i]));
+//}
+
+
+//K most frequent
+int[] nums = { 1, 1, 1, 2, 2, 3 };
+int k = 2;
+int[] frequent = TopKFrequentSolution.TopKFrequent(nums, k);
+Console.WriteLine(string.Join(", ", frequent));
