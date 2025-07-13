@@ -15,9 +15,8 @@ Console.WriteLine(ContainsDuplicateSolution.ContainsDuplicate(nums));
 */
 
 //Valid Anagram
-/*string s = "anagram", t = "nagaram";
+string s = "anagram", t = "nagaram";
 //string s = "rat", t = "car";
 //string s = "rat", t = "tar";
 
 Console.WriteLine(ValidAnagramSolution.IsAnagram(s, t));
-*/
