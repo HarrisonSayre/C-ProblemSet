@@ -22,14 +22,22 @@ Console.WriteLine("Here is the solution");
 
 
 //TwoSum
-int[] nums = [2, 7, 11, 15];
-int target = 9;
+//int[] nums = [2, 7, 11, 15];
+//int target = 9;
 
-//int[] nums = [3, 2, 4];
-//int target = 6;
+////int[] nums = [3, 2, 4];
+////int target = 6;
 
-//int[] nums = [3, 3];
-//int target = 6;
+////int[] nums = [3, 3];
+////int target = 6;
 
-int[] solution = TwoSumSolution.TwoSum(nums, target);
-Console.WriteLine(solution[0]+" "+solution[1]);
+//int[] solution = TwoSumSolution.TwoSum(nums, target);
+//Console.WriteLine(solution[0]+" "+solution[1]);
+
+//Group Anagrams
+String[] strings = { "eat", "tea", "tan", "ate", "nat", "bat" };
+List<List<string>> result = GroupAnagramsSolution.GroupAnagrams(strings);
+for(int i = 0; i < result.Count; i++)
+{
+    Console.WriteLine(String.Join(",", result[i]));
+}
