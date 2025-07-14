@@ -79,13 +79,19 @@ Console.WriteLine("Here is the solution");
 //Console.WriteLine(ValidPalindromeSolution.IsPalindrome(s));
 
 //TwoSum 2 Electric Boogaloo
+////int[] numbers = { 2, 7, 11, 15 };
+////int target = 9;
+////int[] numbers = { 2, 3, 4 };
+////int target = 6;
+////int[] numbers = { -1,0 };
+////int target = -1;
 //int[] numbers = { 2, 7, 11, 15 };
-//int target = 9;
-//int[] numbers = { 2, 3, 4 };
-//int target = 6;
-//int[] numbers = { -1,0 };
-//int target = -1;
-int[] numbers = { 2, 7, 11, 15 };
-int target = 18;
-int[] sum = TwoSumIISolution.TwoSum(numbers, target);
-Console.WriteLine(String.Join(",", sum));
+//int target = 18;
+//int[] sum = TwoSumIISolution.TwoSum(numbers, target);
+//Console.WriteLine(String.Join(",", sum));
+
+//ThreeSum
+int[] numbers = {-1, 0, 1, 2, -1, -4};
+//int[] numbers = { 0, 1, 1};
+//int[] numbers = { 0, 0, 0};
+ThreeSumSolution.ThreeSum(numbers);
