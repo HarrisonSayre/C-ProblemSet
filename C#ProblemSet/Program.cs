@@ -100,10 +100,21 @@ Console.WriteLine("Here is the solution");
 //int[] numbers = {1, 8, 6, 2, 5, 4, 8, 3, 7};
 //Console.WriteLine(ContainerWithMostWaterSolution.MaxArea(numbers));
 
-//Valid Parens
-//string parens = "()";
-//string parens = "()[]{}";
-//string parens = "(]";
-string parens = "([])";
-Console.WriteLine(ValidParenthesesSolution.IsValid(parens));
+////Valid Parens
+////string parens = "()";
+////string parens = "()[]{}";
+////string parens = "(]";
+//string parens = "([])";
+//Console.WriteLine(ValidParenthesesSolution.IsValid(parens));
 
+//Min Stack
+MinStack minStack = new MinStack();
+minStack.Push(-2);
+minStack.Push(0);
+minStack.Push(-2);
+minStack.Push(-3);
+Console.WriteLine(minStack.GetMin());
+minStack.Pop();
+minStack.Pop();
+Console.WriteLine(minStack.Top());
+Console.WriteLine(minStack.GetMin());
