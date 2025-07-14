@@ -96,7 +96,14 @@ Console.WriteLine("Here is the solution");
 ////int[] numbers = { 0, 0, 0};
 //ThreeSumSolution.ThreeSum(numbers);
 
-//Container With Most Water
-int[] numbers = {1, 8, 6, 2, 5, 4, 8, 3, 7};
-Console.WriteLine(ContainerWithMostWaterSolution.MaxArea(numbers));
+////Container With Most Water
+//int[] numbers = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+//Console.WriteLine(ContainerWithMostWaterSolution.MaxArea(numbers));
+
+//Valid Parens
+//string parens = "()";
+//string parens = "()[]{}";
+//string parens = "(]";
+string parens = "([])";
+Console.WriteLine(ValidParenthesesSolution.IsValid(parens));
 
