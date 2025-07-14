@@ -73,7 +73,19 @@ Console.WriteLine("Here is the solution");
 //Console.WriteLine(ValidSudokuSolution.IsValidSudoku(board));
 
 //Valid Palindrome 
-string s = "A man, a plan, a canal: Panama";
-//string s = "race a car";
-//string s = " ";
-Console.WriteLine(ValidPalindromeSolution.IsPalindrome(s));
+//string s = "A man, a plan, a canal: Panama";
+////string s = "race a car";
+////string s = " ";
+//Console.WriteLine(ValidPalindromeSolution.IsPalindrome(s));
+
+//TwoSum 2 Electric Boogaloo
+//int[] numbers = { 2, 7, 11, 15 };
+//int target = 9;
+//int[] numbers = { 2, 3, 4 };
+//int target = 6;
+//int[] numbers = { -1,0 };
+//int target = -1;
+int[] numbers = { 2, 7, 11, 15 };
+int target = 18;
+int[] sum = TwoSumIISolution.TwoSum(numbers, target);
+Console.WriteLine(String.Join(",", sum));
