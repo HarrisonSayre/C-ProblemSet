@@ -107,14 +107,20 @@ Console.WriteLine("Here is the solution");
 //string parens = "([])";
 //Console.WriteLine(ValidParenthesesSolution.IsValid(parens));
 
-//Min Stack
-MinStack minStack = new MinStack();
-minStack.Push(-2);
-minStack.Push(0);
-minStack.Push(-2);
-minStack.Push(-3);
-Console.WriteLine(minStack.GetMin());
-minStack.Pop();
-minStack.Pop();
-Console.WriteLine(minStack.Top());
-Console.WriteLine(minStack.GetMin());
+////Min Stack
+//MinStack minStack = new MinStack();
+//minStack.Push(-2);
+//minStack.Push(0);
+//minStack.Push(-2);
+//minStack.Push(-3);
+//Console.WriteLine(minStack.GetMin());
+//minStack.Pop();
+//minStack.Pop();
+//Console.WriteLine(minStack.Top());
+//Console.WriteLine(minStack.GetMin());
+
+//Reverse polish notation
+//string[] tokens = { "2", "1", "+", "3", "*" };
+//string[] tokens = {"4","13","5","/","+"};
+string[] tokens = { "10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+" };
+Console.WriteLine(RPNSolution.EvalRPN(tokens));
