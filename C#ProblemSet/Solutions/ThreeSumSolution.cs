@@ -34,6 +34,7 @@ public class ThreeSumSolution
                 if (nums[i] + nums[j] + target == 0)
                 {
                     List<int> triplet = new List<int>() { target, nums[i], nums[j]};
+                    Console.WriteLine(string.Join(",", triplet));
                     triplets.Add(triplet);
                     i++;
                     j--;
