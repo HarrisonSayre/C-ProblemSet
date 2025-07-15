@@ -125,7 +125,12 @@ Console.WriteLine("Here is the solution");
 //string[] tokens = { "10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+" };
 //Console.WriteLine(RPNSolution.EvalRPN(tokens));
 
-//Generate Parens
-GenerateParenthesesSolution test = new GenerateParenthesesSolution();
-List<String> result = test.GenerateParenthesis(3);
-Console.WriteLine(String.Join(", ", result));
+////Generate Parens
+//GenerateParenthesesSolution test = new GenerateParenthesesSolution();
+//List<String> result = test.GenerateParenthesis(3);
+//Console.WriteLine(String.Join(", ", result));
+
+//Daily Temperature
+int[] temps = { 73, 74, 75, 71, 69, 72, 76, 73 };
+int[] answer = DailyTemperatureSolution.DailyTemperatures(temps);
+Console.WriteLine(String.Join(", ", answer));
