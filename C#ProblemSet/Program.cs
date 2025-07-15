@@ -119,8 +119,13 @@ Console.WriteLine("Here is the solution");
 //Console.WriteLine(minStack.Top());
 //Console.WriteLine(minStack.GetMin());
 
-//Reverse polish notation
-//string[] tokens = { "2", "1", "+", "3", "*" };
-//string[] tokens = {"4","13","5","/","+"};
-string[] tokens = { "10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+" };
-Console.WriteLine(RPNSolution.EvalRPN(tokens));
+////Reverse polish notation
+////string[] tokens = { "2", "1", "+", "3", "*" };
+////string[] tokens = {"4","13","5","/","+"};
+//string[] tokens = { "10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+" };
+//Console.WriteLine(RPNSolution.EvalRPN(tokens));
+
+//Generate Parens
+GenerateParenthesesSolution test = new GenerateParenthesesSolution();
+List<String> result = test.GenerateParenthesis(3);
+Console.WriteLine(String.Join(", ", result));
