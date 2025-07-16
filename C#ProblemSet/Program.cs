@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-c
 // onsole-template for more information
 using C_ProblemSet.Solutions;
+using static System.Net.Mime.MediaTypeNames;
 
 Console.WriteLine("Here is the solution");
 
@@ -144,9 +145,20 @@ Console.WriteLine("Here is the solution");
 //int[] speed = { 2, 4, 1, 1, 3 };
 //Console.WriteLine(CarFleetSolution.CarFleet(target, position, speed));
 
-//Binary Search
-int[] nums = { -1, 0, 3, 5, 9, 12 };
-int target = 9;
-//int target = 2;
-BinarySearchSolution test = new BinarySearchSolution();
-Console.WriteLine(test.Search(nums, target));
+////Binary Search
+//int[] nums = { -1, 0, 3, 5, 9, 12 };
+//int target = 9;
+////int target = 2;
+//BinarySearchSolution test = new BinarySearchSolution();
+//Console.WriteLine(test.Search(nums, target));
+
+//2D Matrix Search
+int[][] matrix;
+int[] row1 = { 1, 3, 5, 7 };
+int[] row2 = { 10, 11, 16, 20 };
+int[] row3 = { 23, 30, 34, 60 };
+matrix = new int[][] { row1, row2, row3 };
+int target = 3;
+//int target = 13;
+TwoDMatrixSolution test = new TwoDMatrixSolution();
+Console.WriteLine(test.searchMatrix(matrix, target));
