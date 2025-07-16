@@ -138,8 +138,15 @@ Console.WriteLine("Here is the solution");
 //int[] answer = DailyTemperatureSolution.DailyTemperatures(temps);
 //Console.WriteLine(String.Join(", ", answer));
 
-//Car Fleet
-int target = 12;
-int[] position = { 10, 8, 0, 5, 3 };
-int[] speed = { 2, 4, 1, 1, 3 };
-Console.WriteLine(CarFleetSolution.CarFleet(target, position, speed));
+////Car Fleet
+//int target = 12;
+//int[] position = { 10, 8, 0, 5, 3 };
+//int[] speed = { 2, 4, 1, 1, 3 };
+//Console.WriteLine(CarFleetSolution.CarFleet(target, position, speed));
+
+//Binary Search
+int[] nums = { -1, 0, 3, 5, 9, 12 };
+int target = 9;
+//int target = 2;
+BinarySearchSolution test = new BinarySearchSolution();
+Console.WriteLine(test.Search(nums, target));
