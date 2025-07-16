@@ -158,13 +158,13 @@ Console.WriteLine("Here is the solution");
 //BinarySearchSolution test = new BinarySearchSolution();
 //Console.WriteLine(test.Search(nums, target));
 
-//2D Matrix Search
-int[][] matrix;
-int[] row1 = { 1, 3, 5, 7 };
-int[] row2 = { 10, 11, 16, 20 };
-int[] row3 = { 23, 30, 34, 60 };
-matrix = new int[][] { row1, row2, row3 };
-int target = 3;
-//int target = 13;
-TwoDMatrixSolution test = new TwoDMatrixSolution();
-Console.WriteLine(test.searchMatrix(matrix, target));
+////2D Matrix Search
+//int[][] matrix;
+//int[] row1 = { 1, 3, 5, 7 };
+//int[] row2 = { 10, 11, 16, 20 };
+//int[] row3 = { 23, 30, 34, 60 };
+//matrix = new int[][] { row1, row2, row3 };
+//int target = 3;
+////int target = 13;
+//TwoDMatrixSolution test = new TwoDMatrixSolution();
+//Console.WriteLine(test.searchMatrix(matrix, target));
