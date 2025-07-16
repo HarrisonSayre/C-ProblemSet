@@ -21,10 +21,9 @@ public class CarFleetSolution
         Array.Sort(graphPoints, (a, b) => b[0].CompareTo(a[0]));
 
         Stack<double> carStack = new Stack<double>();
-        foreach (int[] point in graphPoints)
+        foreach (int[] p in graphPoints)
         {
-            double time = target - point[0];
-            time = time / point[1];
+            double time = (target - p[0]) / p[1];
             if (carStack.Count ==0 || time > carStack.Peek())
             {
                 carStack.Push(time);
