@@ -130,7 +130,16 @@ Console.WriteLine("Here is the solution");
 //List<String> result = test.GenerateParenthesis(3);
 //Console.WriteLine(String.Join(", ", result));
 
-//Daily Temperature
-int[] temps = { 73, 74, 75, 71, 69, 72, 76, 73 };
-int[] answer = DailyTemperatureSolution.DailyTemperatures(temps);
-Console.WriteLine(String.Join(", ", answer));
+////Daily Temperature
+//int[] temps = { 73, 74, 75, 71, 69, 72, 76, 73 };
+////int[] temps = { 30, 40, 50, 60 };
+////int[] temps = { 30, 60, 90 };
+
+//int[] answer = DailyTemperatureSolution.DailyTemperatures(temps);
+//Console.WriteLine(String.Join(", ", answer));
+
+//Car Fleet
+int target = 12;
+int[] position = { 10, 8, 0, 5, 3 };
+int[] speed = { 2, 4, 1, 1, 3 };
+Console.WriteLine(CarFleetSolution.CarFleet(target, position, speed));
