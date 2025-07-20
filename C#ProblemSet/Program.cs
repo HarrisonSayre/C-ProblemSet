@@ -179,12 +179,17 @@ Console.WriteLine("Here is the solution");
 //ListNode newHead = ReverseLinkedListSolution.ReverseList(node1);
 //Console.WriteLine(newHead.val+" next val is "+ newHead.next.val);
 
-//Merge Two Sorted Lists
-ListNode node6B = new ListNode(6);
-ListNode node5A = new ListNode(5);
-ListNode node4A = new ListNode(4, node5A);
-ListNode node3B = new ListNode(3, node6B);
-ListNode node2B = new ListNode(2, node3B);
-ListNode node1A = new ListNode(1, node4A);
-ListNode mergedHead = MergeTwoListsSolution.MergeTwoLists(node1A, node2B);
-Console.WriteLine(mergedHead.next.val);
+////Merge Two Sorted Lists
+//ListNode node6B = new ListNode(6);
+//ListNode node5A = new ListNode(5);
+//ListNode node4A = new ListNode(4, node5A);
+//ListNode node3B = new ListNode(3, node6B);
+//ListNode node2B = new ListNode(2, node3B);
+//ListNode node1A = new ListNode(1, node4A);
+//ListNode mergedHead = MergeTwoListsSolution.MergeTwoLists(node1A, node2B);
+//Console.WriteLine(mergedHead.next.val);
+
+//Best time to buy and sell
+int[] stocks = { 7, 1, 5, 3, 6, 4 };
+//int[] stocks = { 7, 6, 4, 3, 1 };
+Console.WriteLine(BuyAndSellSolution.MaxProfit(stocks));
