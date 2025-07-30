@@ -195,8 +195,7 @@ Console.WriteLine("Here is the solution");
 //Console.WriteLine(BuyAndSellSolution.MaxProfit(stocks));
 
 //Longest non-repeating substring
-//string test = "abcabcbb";
+string test = "abcabdcbb";
 //string test = "bbb"
-string test = "pwwkew";
-
+//string test = "pwwkew";
 Console.WriteLine(LongestSubstringSolution.LengthOfLongestSubstring(test));
