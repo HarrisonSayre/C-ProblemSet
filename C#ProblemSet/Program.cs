@@ -189,7 +189,14 @@ Console.WriteLine("Here is the solution");
 //ListNode mergedHead = MergeTwoListsSolution.MergeTwoLists(node1A, node2B);
 //Console.WriteLine(mergedHead.next.val);
 
-//Best time to buy and sell
-int[] stocks = { 7, 1, 5, 3, 6, 4 };
-//int[] stocks = { 7, 6, 4, 3, 1 };
-Console.WriteLine(BuyAndSellSolution.MaxProfit(stocks));
+////Best time to buy and sell
+//int[] stocks = { 7, 1, 5, 3, 6, 4 };
+////int[] stocks = { 7, 6, 4, 3, 1 };
+//Console.WriteLine(BuyAndSellSolution.MaxProfit(stocks));
+
+//Longest non-repeating substring
+//string test = "abcabcbb";
+//string test = "bbb"
+string test = "pwwkew";
+
+Console.WriteLine(LongestSubstringSolution.LengthOfLongestSubstring(test));
