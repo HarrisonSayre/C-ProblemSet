@@ -50,11 +50,11 @@ Console.WriteLine("Here is the solution");
 //int[] frequent = TopKFrequentSolution.TopKFrequent(nums, k);
 //Console.WriteLine(string.Join(", ", frequent));
 
-////ProductOfArrayExceptSelf
-//int[] nums = { 1, 2, 3, 4 };
-////int[] nums = { -1, 1, 0, -3, 3 };
-//int[] product = ProductOfArrayExceptSelfSolution.ProductExceptSelf(nums);
-//Console.WriteLine(string.Join(", ", product));
+//ProductOfArrayExceptSelf
+int[] nums = { 1, 2, 3, 4 };
+//int[] nums = { -1, 1, 0, -3, 3 };
+int[] product = ProductOfArrayExceptSelfSolution.ProductExceptSelf(nums);
+Console.WriteLine(string.Join(", ", product));
 
 //Valid Sudoku
 //char[] row1 = { '5', '3', '.', '.', '7', '.', '.', '.', '.' };
@@ -194,8 +194,8 @@ Console.WriteLine("Here is the solution");
 ////int[] stocks = { 7, 6, 4, 3, 1 };
 //Console.WriteLine(BuyAndSellSolution.MaxProfit(stocks));
 
-//Longest non-repeating substring
-string test = "abcabdcbb";
-//string test = "bbb"
-//string test = "pwwkew";
-Console.WriteLine(LongestSubstringSolution.LengthOfLongestSubstring(test));
+////Longest non-repeating substring
+//string test = "abcabdcbb";
+////string test = "bbb"
+////string test = "pwwkew";
+//Console.WriteLine(LongestSubstringSolution.LengthOfLongestSubstring(test));
