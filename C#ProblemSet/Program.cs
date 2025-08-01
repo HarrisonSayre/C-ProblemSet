@@ -50,28 +50,30 @@ Console.WriteLine("Here is the solution");
 //int[] frequent = TopKFrequentSolution.TopKFrequent(nums, k);
 //Console.WriteLine(string.Join(", ", frequent));
 
-//ProductOfArrayExceptSelf
-int[] nums = { 1, 2, 3, 4 };
-//int[] nums = { -1, 1, 0, -3, 3 };
-int[] product = ProductOfArrayExceptSelfSolution.ProductExceptSelf(nums);
-Console.WriteLine(string.Join(", ", product));
+////ProductOfArrayExceptSelf
+//int[] nums = { 1, 2, 3, 4 };
+////int[] nums = { -1, 1, 0, -3, 3 };
+//int[] product = ProductOfArrayExceptSelfSolution.ProductExceptSelf(nums);
+//Console.WriteLine(string.Join(", ", product));
 
 //Valid Sudoku
-//char[] row1 = { '5', '3', '.', '.', '7', '.', '.', '.', '.' };
-////char[] row1 = { '8', '3', '.', '.', '7', '.', '.', '.', '.' }; //wrong answer
-//char[] row2 = { '6', '.', '.', '1', '9', '5', '.', '.', '.' };
-//char[] row3 = { '.', '9', '8', '.', '.', '.', '.', '6', '.' };
+char[] row1 = { '5', '3', '.', '.', '7', '.', '.', '.', '.' };
+//char[] row1 = { '8', '3', '.', '.', '7', '.', '.', '.', '.' }; //wrong answer
+char[] row2 = { '6', '.', '.', '1', '9', '5', '.', '.', '.' };
+char[] row3 = { '.', '9', '8', '.', '.', '.', '.', '6', '.' };
 
-//char[] row4 = { '8', '.', '.', '.', '6', '.', '.', '.', '3' };
-//char[] row5 = {'4', '.', '.', '8', '.', '3', '.', '.', '1' };
-//char[] row6 = { '7', '.', '.', '.', '2', '.', '.', '.', '6' };
+char[] row4 = { '8', '.', '.', '.', '6', '.', '.', '.', '3' };
+char[] row5 = { '4', '.', '.', '8', '.', '3', '.', '.', '1' };
+char[] row6 = { '7', '.', '.', '.', '2', '.', '.', '.', '6' };
 
-//char[] row7 = { '.', '6', '.', '.', '.', '.', '2', '8', '.' };
-//char[] row8 = { '.', '.', '.', '4', '1', '9', '.', '.', '5' };
-//char[] row9 = { '.', '.', '.', '.', '8', '.', '.', '7', '9' };
+char[] row7 = { '.', '6', '.', '.', '.', '.', '2', '8', '.' };
+char[] row8 = { '.', '.', '.', '4', '1', '9', '.', '.', '5' };
+char[] row9 = { '.', '.', '.', '.', '8', '.', '.', '7', '9' };
 
-//char[][] board = new char[][] {row1, row2, row3, row4, row5, row6, row7, row8, row9 };
+char[][] board = new char[][] {row1, row2, row3, row4, row5, row6, row7, row8, row9 };
 //Console.WriteLine(ValidSudokuSolution.IsValidSudoku(board));
+Console.WriteLine(ValidSudokuSolution.IsValidSudokuBitMask(board));
+
 
 //Longest Consecutive sequence
 //int[] nums = { 100, 4, 200, 1, 3, 2 };

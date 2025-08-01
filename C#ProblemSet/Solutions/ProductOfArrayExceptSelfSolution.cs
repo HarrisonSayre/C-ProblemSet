@@ -12,8 +12,8 @@ internal class ProductOfArrayExceptSelfSolution
     public static int[] ProductExceptSelf(int[] nums)
     {
         int[] products = new int[nums.Length];
-        int[] prefix = new int[nums.Length];
-        int[] suffix = new int[nums.Length];
+        //int[] prefix = new int[nums.Length];
+        //int[] suffix = new int[nums.Length];
 
 
         ////Do this to allow initial multiplication
