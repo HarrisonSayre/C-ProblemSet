@@ -75,12 +75,12 @@ Console.WriteLine("Here is the solution");
 //Console.WriteLine(ValidSudokuSolution.IsValidSudokuBitMask(board));
 
 
-//Longest Consecutive sequence
-int[] nums = { 100, 4, 200, 1, 3, 2 };
-//int[] nums = { 0, 3, 7, 2, 5, 8, 4, 6, 0, 1 };
-//int[] nums = {1,0,1,2};
-Console.WriteLine(LongestConsecutiveSequenceSolution.LongestConsecutive(nums));
-Console.WriteLine(LongestConsecutiveSequenceSolution.LongestConsecutiveSorting(nums));
+////Longest Consecutive sequence
+//int[] nums = { 100, 4, 200, 1, 3, 2 };
+////int[] nums = { 0, 3, 7, 2, 5, 8, 4, 6, 0, 1 };
+////int[] nums = {1,0,1,2};
+//Console.WriteLine(LongestConsecutiveSequenceSolution.LongestConsecutive(nums));
+//Console.WriteLine(LongestConsecutiveSequenceSolution.LongestConsecutiveSorting(nums));
 
 
 //Valid Palindrome 
@@ -203,3 +203,9 @@ Console.WriteLine(LongestConsecutiveSequenceSolution.LongestConsecutiveSorting(n
 ////string test = "bbb"
 ////string test = "pwwkew";
 //Console.WriteLine(LongestSubstringSolution.LengthOfLongestSubstring(test));
+
+////Character replacement for longest substring of one char
+//string s = "ABAB";
+string s = "AABABBA";
+int k = 2;
+Console.WriteLine(CharacterReplacementSolution.CharacterReplacement(s, k));
