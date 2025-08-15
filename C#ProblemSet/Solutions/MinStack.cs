@@ -6,6 +6,56 @@ using System.Threading.Tasks;
 
 namespace C_ProblemSet.Solutions;
 
+public class MinStackMem2
+{
+
+    private Stack<int> regularStack;
+    private Stack<int> minimumStack;
+
+    public MinStackMem2()
+    {
+        regularStack = new Stack<int>();
+        minimumStack = new Stack<int>();
+    }
+
+    public void Push(int val)
+    {
+        if (regularStack.Count() == 0)
+        {
+            minimumStack.Push(val);
+        }
+        else
+        {
+            if (val < minimumStack.Peek())
+            {
+                minimumStack.Push(val);
+            }
+            else
+            {
+                minimumStack.Push(minimumStack.Peek());
+            }
+        }
+        regularStack.Push(val);
+    }
+
+    public void Pop()
+    {
+        regularStack.Pop();
+        minimumStack.Pop();
+    }
+
+    public int Top()
+    {
+        return regularStack.Peek();
+    }
+
+    public int GetMin()
+    {
+        return minimumStack.Peek();
+
+    }
+}
+
 public class MinStackMem1
 {
 
