@@ -8,7 +8,28 @@ namespace C_ProblemSet.Solutions;
 
 public class DailyTemperatureSolution
 {
-        public int[] DailyTemperaturesMem2(int[] temperatures) {
+    public int[] DailyTemperaturesMem3(int[] temperatures)
+    {
+        Stack<int[]> temperatureStack = new Stack<int[]>();
+        int[] answers = new int[temperatures.Length];
+
+        for (int i = 0; i < temperatures.Length; i++)
+        {
+            int curTemp = temperatures[i];
+            while (temperatureStack.Count > 0 && curTemp > temperatureStack.Peek()[0])
+            {
+                int[] topPair = temperatureStack.Pop();
+                answers[topPair[1]] = i - topPair[1];
+            }
+
+            int[] curTempPair = { curTemp, i };
+            temperatureStack.Push(curTempPair);
+        }
+
+        return answers;
+    }
+
+    public int[] DailyTemperaturesMem2(int[] temperatures) {
         Stack<int[]> temperatureStack = new Stack<int[]>();
         int[] tempAnswers = new int[temperatures.Length];
 
