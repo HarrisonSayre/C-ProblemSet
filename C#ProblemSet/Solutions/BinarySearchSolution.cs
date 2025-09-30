@@ -34,4 +34,32 @@ public class BinarySearchSolution
     {
         return BinarySearch(0, nums.Length - 1, nums, target);
     }
+
+    public int BinarySearcMem1(int left, int right, int[] nums, int target)
+    {
+        if (left > right)
+        {
+            return -1;
+        }
+        int middle = left + (right - left) / 2;
+
+        if (nums[middle] == target)
+        {
+            return middle;
+        }
+        else if (nums[middle] < target)
+        {
+            return BinarySearcMem1(middle + 1, right, nums, target);
+        }
+        else
+        {
+            return BinarySearcMem1(left, middle - 1, nums, target);
+        }
+    }
+
+    public int SearchMem1(int[] nums, int target)
+    {
+        return BinarySearcMem1(0, nums.Length - 1, nums, target);
+    }
+
 }
