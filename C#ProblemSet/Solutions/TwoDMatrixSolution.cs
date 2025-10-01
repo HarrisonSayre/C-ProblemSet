@@ -10,6 +10,62 @@ namespace C_ProblemSet.Solutions;
 
 public class TwoDMatrixSolution
 {
+
+    public bool SearchMatrixMem1(int[][] matrix, int target)
+    {
+        int rows = matrix.Length;
+        int columns = matrix[0].Length;
+
+        int top = 0;
+        int bottom = rows - 1;
+        int middleRow = 0;
+
+        while (top <= bottom)
+        {
+            middleRow = (top + bottom) / 2;
+            //Console.WriteLine(middleRow+" MIDDLE ROW");
+            if (target < matrix[middleRow][0])
+            {
+                bottom = middleRow - 1;
+
+            }
+            else if (target > matrix[middleRow][columns - 1])
+            {
+                top = middleRow + 1;
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        int left = 0;
+        int right = columns - 1;
+        int middleColumn = 0;
+
+        while (left <= right)
+        {
+            middleColumn = (left + right) / 2;
+            //Console.WriteLine(middleColumn+ " MIDDLE COLUMN");
+            //Console.WriteLine(matrix[middleRow][middleColumn]);
+            if (matrix[middleRow][middleColumn] == target)
+            {
+                return true;
+            }
+            else if (target < matrix[middleRow][middleColumn])
+            {
+                right = middleColumn - 1;
+            }
+            else if (target > matrix[middleRow][middleColumn])
+            {
+                left = middleColumn + 1;
+            }
+        }
+
+        return false;
+
+    }
+
     public int searchRow(int[][] matrix, int target, int startIndex, int endIndex)
     {
         int mid = (startIndex + endIndex) / 2;
