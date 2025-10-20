@@ -40,4 +40,30 @@ public class LongestSubstringSolution
 
         return longest; 
     }
+
+    public int LengthOfLongestSubstringMem1(string s)
+    {
+        HashSet<char> subStrings = new HashSet<char>();
+        int longestSub = 0;
+        int left = 0;
+
+        for (int right = 0; right < s.Length; right++)
+        {
+            while (subStrings.Contains(s[right]))
+            {
+                subStrings.Remove(s[left]);
+                left++;
+            }
+            subStrings.Add(s[right]);
+            if (right - left + 1 > longestSub)
+            {
+                longestSub = right - left + 1;
+            }
+        }
+
+        return longestSub;
+
+
+    }
+
 }
