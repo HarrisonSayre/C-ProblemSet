@@ -5,6 +5,45 @@ namespace C_ProblemSet.Solutions;
 public class CharacterReplacementSolution
 {
 
+    public int CharacterReplacementMem2(string s, int k)
+    {
+
+        int longest = 0;
+        int mostCommon = 0;
+        int left = 0;
+
+        Dictionary<char, int> charCounts = new Dictionary<char, int>();
+
+        for (int right = 0; right < s.Length; right++)
+        {
+
+            //charCounts[(s[right])] = charCounts[(s[right])]+1;
+
+            if (charCounts.ContainsKey(s[right]))
+            {
+                charCounts[(s[right])] = charCounts[(s[right])] + 1;
+                //Console.WriteLine(charCounts[s[right]]);
+            }
+            else
+            {
+                charCounts[s[right]] = 1;
+            }
+
+            mostCommon = Math.Max(mostCommon, charCounts[s[right]]);
+
+            while (((right - left + 1) - mostCommon > k))
+            {
+                charCounts[s[left]]--;
+                left++;
+            }
+
+
+            longest = Math.Max(longest, (right - left + 1));
+        }
+
+        return longest;
+    }
+
     public int CharacterReplacementMem1(string s, int k)
     {
 
